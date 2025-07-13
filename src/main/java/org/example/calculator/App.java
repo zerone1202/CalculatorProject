@@ -23,19 +23,12 @@ public class App {
 //        Scanner를 사용하여 사칙연산 기호를 전달 받을 수 있습니다.
 //        사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다. (`charAt(0)`)
 
-        System.out.print("사칙연산 기호를 입력하세요: ");
-        char operator = sc.next().charAt(0);
+        System.out.print("사칙연산 기호를 입력하세요: "); //  Scanner를 사용하여 사칙연산 기호를 전달 받을 수 있습니다.
+        char operator = sc.next().charAt(0); // 문자열에서 첫 글자만 가져옵니다.
         // 사칙연산 기호를 적합한 타입으로 선언한 변수에 저장합니다.
 
-//        키워드 : `if` `switch`
-//        사칙연산 기호에 맞는 연산자를 사용하여 연산을 진행합니다.
-//        입력받은 연산 기호를 구분하기 위해 제어문을 사용합니다. (예를 들면 if, switch)
-//        연산 오류가 발생할 경우 해당 오류에 대한 내용을 정제하여 출력합니다.
-//        ex) “나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.
+        System.out.println("입력된 연산 기호: " + operator);
 
 
-        int result = 0;
-        /* 제어문을 활용하여 위 요구사항을 만족할 수 있게 구현합니다.*/
-        System.out.println("결과: " + result);
     }
 }
