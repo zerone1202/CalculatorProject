@@ -36,4 +36,14 @@ public class Calculator {
         results.add(result);
         return result;
     }
+
+    // 간접 접근을 통해 필드에 접근하여 가져올 수 있도록 구현합니다. (Getter 메서드)
+    public List<Double> getResults() {
+        return results;
+    }
+
+    // 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현합니다. (Setter 메서드)
+    public void setResults(List<Double> results) {
+        this.results = results;
+    }
 }
