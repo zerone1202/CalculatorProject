@@ -3,10 +3,8 @@ package org.example.calculator;
 import java.util.Scanner;
 
 public class App {
-
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);// Scanner를 사용하여 양의 정수를 입력받고 적합한 타입의 변수에 저장합니다.
 
         /* 반복문 사용 해서 연산을 반복 */
         while (true) {
@@ -56,8 +54,7 @@ public class App {
 
             System.out.println("결과: " + result);
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
-            /* exit을 입력 받으면 반복 종료 */
+            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)"); // exit을 입력 받으면 반복 종료
         }
 
 
