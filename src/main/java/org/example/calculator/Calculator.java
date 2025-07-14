@@ -40,8 +40,4 @@ public class Calculator {
         results.add(result);
         return result; /* return 연산 결과 */
     }
-        /* 위 요구사항에 맞게 구현 */
-        public List<Double> getResults() {
-            return results;
-    }
 }
