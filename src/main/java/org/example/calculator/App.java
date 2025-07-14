@@ -32,11 +32,19 @@ public class App {
                 System.out.println((i + 1) + "번째 계산 결과: " + results.get(i));
             }
 
+            // App 클래스의 main 메서드에 삭제 메서드가 활용될 수 있도록 수정
+            System.out.println("가장 먼저 저장된 결과를 삭제하려면 'del' 입력하세요. (enter 입력 시 계속)");
+            String deleteInput = sc.nextLine();
+
+            if (deleteInput.equalsIgnoreCase("del")) {
+                calculator.removeFirstResult();
+            }
+
             // 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현합니다. (Setter 메서드)
             System.out.println("초기화하려면 'reset'을 입력하세요. (enter 입력 시 계속)");
-            String reset = sc.nextLine();
+            String resetInput = sc.nextLine();
 
-            if (reset.equalsIgnoreCase("reset")) {
+            if (resetInput.equalsIgnoreCase("reset")) {
                 calculator.setResults(new ArrayList<>()); // 계산 결과들 초기화
                 System.out.println("결과가 초기화되었습니다.");
             }
