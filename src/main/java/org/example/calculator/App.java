@@ -33,10 +33,15 @@ public class App {
             }
 
             // 간접 접근을 통해 필드에 접근하여 수정할 수 있도록 구현합니다. (Setter 메서드)
-            calculator.setResults(new ArrayList<>()); // 계산 결과들 초기화
-            System.out.println("결과 목록이 초기화되었습니다.");
+            System.out.println("초기화하려면 'reset'을 입력하세요. (enter 입력 시 계속)");
+            String reset = sc.nextLine();
+
+            if (reset.equalsIgnoreCase("reset")) {
+                calculator.setResults(new ArrayList<>()); // 계산 결과들 초기화
+                System.out.println("결과가 초기화되었습니다.");
+            }
             
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            System.out.println("더 계산 하시겠습니까? (exit 입력 시 종료)");
             String input = sc.nextLine();
             if (input.equalsIgnoreCase("exit")) {
                 System.out.println("계산기를 종료합니다.");
