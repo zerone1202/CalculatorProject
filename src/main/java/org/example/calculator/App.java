@@ -56,7 +56,7 @@ public class App {
 
             System.out.println("결과: " + result);
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
+            System.out.println("계산을 종료하려면 'exit' 입력 / 계속하려면 Enter: ");
             /* exit을 입력 받으면 반복 종료 */
         }
 
